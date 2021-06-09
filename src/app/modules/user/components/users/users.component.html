@@ -1,0 +1,5 @@
+<hr/>
+<div>{{fullUser?.id}} - {{fullUser?.name}} - {{fullUser?.username}} - {{fullUser?.email}} - <button (click)="Login()">Login</button></div>
+<hr/>
+
+<app-user *ngFor="let user of users" [user]="user" (userLift)="liftUser($event)"></app-user>

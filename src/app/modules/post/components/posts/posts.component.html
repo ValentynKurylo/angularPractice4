@@ -1,0 +1,5 @@
+<hr/>
+<div>{{fullPost?.id}} -- {{fullPost?.title}} :<br/>{{fullPost?.body}}</div>
+<hr/>
+
+<app-post *ngFor="let post of posts" [post]="post" (liftPost)="liftPost($event)"></app-post>
